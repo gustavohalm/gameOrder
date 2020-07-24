@@ -7,5 +7,6 @@ defmodule GameOrderWeb.Router do
 
   scope "/api", GameOrderWeb do
     pipe_through :api
+    resources "orders/", OrderController
   end
 end
